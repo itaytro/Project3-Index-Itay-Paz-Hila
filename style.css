@@ -1,0 +1,217 @@
+/* מגישים: איתי טרופר, פז סקפינקר, הילה וייס
+ת"ז: 207797564, 208135053, 322331547 */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html, body {height: 100%;}
+
+body {
+    background-image: url("background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Playfair Display', serif;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.logo {
+    height: 130px;
+    width: auto;
+    display: inline-block;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    background: rgba(255, 255, 255, 0.75);
+    padding: 20px 0;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #6b5b4b;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.main-nav {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+nav a:hover {text-decoration: underline;}
+
+.main-content {
+    background: rgba(255, 255, 255, 0.55);
+    padding: 35px 40px;
+    border-radius: 24px;
+    text-align: center;
+    max-width:1000px;
+    width: 90%;
+}
+
+.main-content h1 {
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.title-small {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    color: #6b5b4b;
+}
+
+.title-medium {
+    font-family: 'Allura', cursive;
+    font-size: 90px;
+    color: #6b5b4b;
+    margin: 0 15px;
+}
+
+.subtitle {
+    font-size: 24px;
+    color: #7a6a58;
+    margin-bottom: 50px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.actions a {
+    text-decoration: none;
+    padding: 18px 36px;
+    border-radius: 30px;
+    background: #d8cfc4;
+    color: #4f463c;
+    font-size: 18px;
+}
+
+.actions a:hover {
+    background: #cbbfb2;
+}
+
+footer {
+    background: rgba(255, 255, 255, 0.55);
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    color: #6b5b4b;
+}
+
+.pos-btn {position: relative;}
+
+.tooltip {
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #4f463c;
+    color: #ffffff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    white-space: nowrap;
+    display: none;
+}
+
+.pos-btn:hover .tooltip {
+    display: block;
+}
+
+@media (min-width: 1500px) {
+    .logo {height: 200px;}
+
+    .title-small {font-size: 90px;}
+
+    .title-medium { 
+        font-size: 140px;
+        margin: 0 25px;
+    }
+
+    .subtitle { 
+        font-size: 28px;
+        margin: 40px auto 60px auto;
+        max-width: 70%;
+    }
+
+    nav a {font-size: 24px;}
+
+    nav ul {
+        max-width: 100%;
+        gap: 80px;
+    }
+
+    .actions {gap: 30px;}
+
+    .actions a { 
+        font-size: 24px;
+        padding: 25px 50px;
+    border-radius: 40px;
+    }
+
+    .main-content { 
+        max-width: 1400px;
+        padding: 60px 40px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 750px) {
+    .title-small {font-size: 36px;}
+
+    .title-script {font-size: 56px;}
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .actions a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-container {flex-direction: column;}
+}
