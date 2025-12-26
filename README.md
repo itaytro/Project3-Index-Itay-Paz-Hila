@@ -3,7 +3,7 @@ DishDiary is a responsive web-based landing page designed for a personal recipe 
 This project serves as the foundation for a larger web application, focusing on semantic HTML5 structure, CSS layout techniques, and responsive design principles.
 
 ## GitHub Pages Website
-You can the project online here: 
+You can the project online here: https://itaytro.github.io/Project3-Index-Itay-Paz-Hila/
 
 ## Project Requirements & Features
 This project was built according to the following specifications:
